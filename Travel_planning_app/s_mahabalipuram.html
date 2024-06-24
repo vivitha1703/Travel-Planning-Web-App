@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAHABALIPURAM beach</title>
+    <style>
+      h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 20px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>MAHABALIPURAM BEACH</h1>
+    <img src="https://static.toiimg.com/photo/59352333.cms">
+    <img src="https://www.tourmyindia.com/states/tamilnadu/images/mahabalipuram-beach1-1.jpg">
+    <img src="https://media.istockphoto.com/id/1316648719/photo/shore-temple-of-mahabalipuram.jpg?s=612x612&w=0&k=20&c=KEcGrtFaTqRKAlr1dObaddOMdtEkg8b3-eOr69qcgWU=">
+    <img src="https://tourismtn.com/wp-content/uploads/2018/04/SeaShore-in-Mahabalipuram-Beach-with-Shore-Temple-View.jpg">
+    <div class="info">
+    <h2>Address</h2>
+    <p>J5GX+96F, Salavankuppam, Tamil Nadu 603104</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat: 12.6121, lng:  80.1969 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+    <div class="hotels">
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201509161707537604&_uCurrency=INR&checkin=date_2&checkout=date_3&city=CTXMB&cmp=SEM%7CD%7CDH%7CG%7CNeighbourhood%7CDH_POI_Exact_Locus%7CCTXMB_POI71728_Mahabalipuram%20Beach%7CETA%7CRegular%7C465779205087&country=IN&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp7X9TX9RfMQx-8ebG_nrMyr204suxeM9PXj4pqcdyuclu2_wPMIYEwaAtg9EALw_wcB&lat=12.61702&lng=80.1934&locusId=CTXMB&locusType=city&mmPoiTag=POI%7CMahabalipuram%20Beach%7CPOI71728%7C&rank=1&roomStayQualifier=2e0e&s_kwcid=AL%211631%213%21465779205087%21e%21%21g%21%21hotels%20near%20mahabalipuram%20beach&viewType=BUDGET&mtkeys=defaultMtkey">Vilasam</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201511171736348302&_uCurrency=INR&checkin=date_2&checkout=date_3&city=CTXMB&cmp=SEM%7CD%7CDH%7CG%7CNeighbourhood%7CDH_POI_Exact_Locus%7CCTXMB_POI71728_Mahabalipuram%20Beach%7CETA%7CRegular%7C465779205087&country=IN&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp7X9TX9RfMQx-8ebG_nrMyr204suxeM9PXj4pqcdyuclu2_wPMIYEwaAtg9EALw_wcB&lat=12.61895&lng=80.19683&locusId=CTXMB&locusType=city&mmPoiTag=POI%7CMahabalipuram%20Beach%7CPOI71728%7C&rank=2&roomStayQualifier=2e0e&s_kwcid=AL%211631%213%21465779205087%21e%21%21g%21%21hotels%20near%20mahabalipuram%20beach&viewType=BUDGET&mtkeys=defaultMtkey">Rajalakshmi guesthouse</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201802201431591355&_uCurrency=INR&checkin=date_2&checkout=date_3&city=CTXMB&cmp=SEM%7CD%7CDH%7CG%7CNeighbourhood%7CDH_POI_Exact_Locus%7CCTXMB_POI71728_Mahabalipuram%20Beach%7CETA%7CRegular%7C465779205087&country=IN&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp7X9TX9RfMQx-8ebG_nrMyr204suxeM9PXj4pqcdyuclu2_wPMIYEwaAtg9EALw_wcB&lat=12.61783&lng=80.19501&locusId=CTXMB&locusType=city&mmPoiTag=POI%7CMahabalipuram%20Beach%7CPOI71728%7C&rank=3&roomStayQualifier=2e0e&s_kwcid=AL%211631%213%21465779205087%21e%21%21g%21%21hotels%20near%20mahabalipuram%20beach&viewType=BUDGET&mtkeys=defaultMtkey">Hotel Suradeep</a>
+    
+     </div> 
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

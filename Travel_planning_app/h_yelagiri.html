@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yelagiri</title>
+    <style>
+       h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 10px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>YELAGIRI</h1>
+    <img src="https://lh5.googleusercontent.com/p/AF1QipMnvGz-CUrsdEiwKcycFBZybe6o3LS6xxFe0T7q=w548-h318-n-k-no">
+    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSCVfsKHDMBAiXhKKtOMCqkWoVj4ysioeaR49XcboyiqPjsc_5Ndp9TNSqQALK6Ea633jDH_r4Exf3PxCiS4u2QDRUxlg">
+    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcT5RWt6a2ZmdrDkFP8OAPiDAU_OZj0V2jsJQU3kflUkeVNOT63aKdMmggNS5PJJ0BVbyjp4UOmY-UF-cIuKHtzarzlgUg">
+    <img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTl0RKNTzPEheMxQ8SPZaJoCHkPVfSFPzMpLYvF51hkFyABZ9qUuy1tZC1TY3CePgHSJUqxKoivVsmwm75GdGX769bp3A">
+    <div class="info">
+    <h2>Address</h2>
+    <p>Yelagiri Nature Park- Punganur, Yelagiri, Tamil Nadu 635853<br>
+        Thrill Valley-Kottaiyur Village, , Yelagirihills, India, Tamil Nadu<br>
+        Exoticamp's Yelagiri Adventure Camp-Nilavoor, Mangalam Rd, Yelagiri, Tamil Nadu 635853</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat: 12.5856, lng: 78.6345 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+        <div class="hotels">
+          <a href="https://www.booking.com/hotel/in/aruvi-yelagiri-hills.en-gb.html?aid=306395&label=yelagiri-yYLb786nAnnBNxzrExEZugS382874014459%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-299594647645%3Alp1007809%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=cf2571d32635b29b4bb07fb9c5163be6">Aruvi Hotel</a>
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=20140529101101583&_uCurrency=INR&checkin=date_2&checkout=date_3&city=CTXYG&cmp=SEM%7CD%7CDH%7CG%7CDestination%7CDH_Destination_CTXYG_Yelagiri%7CCTXYG_Best%7CRSA%7C&country=IN&filterData=USER_RATING%7C4&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp7PHBSrwp-ADVWM_f0cH5DRcpta1RTJo5zaD2eyapl7T8I_vSJYv3AaArzqEALw_wcB&lat=12.58794&lng=78.63925&locusId=CTXYG&locusType=city&rank=3&reference=hotel&regionNearByExp=3&roomStayQualifier=1e0e&searchText=Yelagiri&type=city&mtkeys=defaultMtkey">Hotel Landmark </a>
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201810161636387467&_uCurrency=INR&checkin=date_2&checkout=date_3&city=CTXYG&cmp=SEM%7CD%7CDH%7CG%7CDestination%7CDH_Destination_CTXYG_Yelagiri%7CCTXYG_Best%7CRSA%7C&country=IN&filterData=USER_RATING%7C4&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp7PHBSrwp-ADVWM_f0cH5DRcpta1RTJo5zaD2eyapl7T8I_vSJYv3AaArzqEALw_wcB&lat=12.583&lng=78.634&locusId=CTXYG&locusType=city&rank=2&reference=hotel&regionNearByExp=3&roomStayQualifier=1e0e&searchText=Yelagiri&type=city&mtkeys=defaultMtkey">Yelagiri EGV</a>
+          <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202103031704187255&_uCurrency=INR&checkin=date_2&checkout=date_3&city=CTXYG&cmp=SEM%7CD%7CDH%7CG%7CDestination%7CDH_Destination_CTXYG_Yelagiri%7CCTXYG_Best%7CRSA%7C&country=IN&filterData=USER_RATING%7C4&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp7PHBSrwp-ADVWM_f0cH5DRcpta1RTJo5zaD2eyapl7T8I_vSJYv3AaArzqEALw_wcB&lat=12.5893&lng=78.63444&locusId=CTXYG&locusType=city&rank=1&reference=hotel&regionNearByExp=3&roomStayQualifier=1e0e&searchText=Yelagiri&type=city&mtkeys=defaultMtkey">Giri Nandhana</a>
+        </div>
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

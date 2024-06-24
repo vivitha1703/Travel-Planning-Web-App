@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodaikanal</title>
+    <style>
+       h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 20px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>KODAIKANAL</h1>
+    <img src="https://lh5.googleusercontent.com/p/AF1QipMfKGk1jFv3khbNi7XRB09SHPCh1cZT8XANAemQ=w141-h101-n-k-no-nu">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipP_T_4sZVWMTsHvHtBGIWHzDJOHVD4GyWe3QVcK=s1360-w1360-h1020">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipP5bQgFU-jbxDs1tLcDxEY50Mky_k-raPc8NV0=s1360-w1360-h1020">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipOP0dBUxdFw72p8bexkg878hnJthZ9JFTQDtxaL=s1360-w1360-h1020">
+    <div class="info">
+    <h2>Address</h2>
+    <p>6FQQ+6MV, Kodaikanal, Tamil Nadu 624101</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat:10.238114  , lng:77.489182  };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+        <div class="hotels">
+          <a href="https://www.booking.com/hotel/in/villa-retreat.en-gb.html?aid=306395&label=kodaikanal-x9VYhWmnpr7tzqkWYMZXmAS383339581604%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-299648770973%3Alp1007809%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=cf2571d32635b29b4bb07fb9c5163be6">Villa Retreat</a>
+          <a href="https://www.booking.com/hotel/in/jc-woodville-manor-kodaikanal.en-gb.html?aid=306395&label=kodaikanal-x9VYhWmnpr7tzqkWYMZXmAS383339581604%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-299648770973%3Alp1007809%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=cf2571d32635b29b4bb07fb9c5163be6">JC Woodville Manor</a>
+          <a href="https://www.booking.com/hotel/in/kodai-bruton.en-gb.html?aid=306395&label=kodaikanal-x9VYhWmnpr7tzqkWYMZXmAS383339581604%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-299648770973%3Alp1007809%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=cf2571d32635b29b4bb07fb9c5163be6">Bruton</a>
+          <a href="https://www.booking.com/hotel/in/raindrops-kodaikanal.en-gb.html?aid=306395&label=kodaikanal-x9VYhWmnpr7tzqkWYMZXmAS383339581604%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-299648770973%3Alp1007809%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YZVcNNsENnH02-pWD53qm9c&sid=cf2571d32635b29b4bb07fb9c5163be6">Hotel Raindrops</a>
+        </div>  
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

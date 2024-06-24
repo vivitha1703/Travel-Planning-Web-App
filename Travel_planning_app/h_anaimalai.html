@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anaimalai</title>
+    <style>
+      h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 20px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>ANAIMALAI</h1>
+    <img src="https://cdn.britannica.com/77/144377-050-9077CCDE/roads-Anaimalai-Hills-India.jpg">
+    <img src="https://www.onefivenine.com/images/Travel/228.jpg">
+    <img src="https://www.shutterstock.com/image-photo/aliyar-reservoirthe-dam-located-foothills-260nw-1588517905.jpg">
+    <img src="https://www.toehold.in/wp-content/uploads/2017/08/RR_Tea-estates-of-Valparai.jpg">
+    <div class="info">
+    <h2>Address</h2>
+    <p>Anaimalai Hills or Anamala Hills are a range of mountains that form the southern border of the Western Ghats, through Tamil Nadu and Kerala.</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat:10.303251213083577, lng:76.997746944};
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+        <div class="hotels">
+          <a href="https://www.manamboliinn.com/rooms-and-facilities.html">Manamboli Inn</a>
+          <a href="https://www.makemytrip.com/hotels/sirukundra_bungalow_rooms_in_a_villa-details-valparai.html">Sirukundra Bungalow</a>
+          <a href="https://www.booking.com/hotel/in/the-soul-bungalow.en-gb.html">The Soul Bungalow</a>
+          
+        </div> 
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

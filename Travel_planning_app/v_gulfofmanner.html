@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gulfofmanner</title>
+    <style>
+       h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 10px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>GULF OF MANNER</h1>
+    <img src="https://www.holidify.com/images/compressed/1110.JPG">
+    <img src="https://static.wixstatic.com/media/dba6fd_a237e7a1df70438ea364555a8167e53f~mv2.jpeg/v1/fit/w_2500,h_1330,al_c/dba6fd_a237e7a1df70438ea364555a8167e53f~mv2.jpeg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg_MUgJJWMCzVZa0EIfpwADcEuAv-mqd2x8CyNK-l1L0RNwMuvogoLGK2O-yGlNq6PGxqF4-1buJM&usqp=CAU&ec=48665701">
+    <img src="https://www.theindia.co.in/blog/wp-content/uploads/2021/01/Gulf-of-mannar.jpg">
+    <div class="info">
+    <h2>Address</h2>
+    <p>4FH8+4FC, Dhanushkodi, Tamil Nadu</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat: 9.127838849079406, lng: 79.46612124827399 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+        <div class="hotels">
+          <a href="https://www.booking.com/hotel/in/panchavarnaa.en-gb.html?aid=356980&label=gog235jc-1BCAUobEIjZ3VsZi1vZi1tYW5uYXItbWFyaW5lLW5hdGlvbmFsLXBhcmtIM1gDaGyIAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AvuMhqUGwAIB0gIkYjIyZTljM2UtYTMwMi00ZjkxLTk5YzUtYmQ3Zjc4MGM0OGMy2AIF4AIB&sid=cf2571d32635b29b4bb07fb9c5163be6">Panchavan residency</a>
+          <a href="https://www.booking.com/hotel/in/ragavendra-rameswaram.en-gb.html?aid=356980&label=gog235jc-1BCAUobEIjZ3VsZi1vZi1tYW5uYXItbWFyaW5lLW5hdGlvbmFsLXBhcmtIM1gDaGyIAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AvuMhqUGwAIB0gIkYjIyZTljM2UtYTMwMi00ZjkxLTk5YzUtYmQ3Zjc4MGM0OGMy2AIF4AIB&sid=cf2571d32635b29b4bb07fb9c5163be6">Hotel Ragavendra</a>
+          <a href="https://www.booking.com/hotel/in/akash-residency-rameswaram.en-gb.html?aid=356980&label=gog235jc-1BCAUobEIjZ3VsZi1vZi1tYW5uYXItbWFyaW5lLW5hdGlvbmFsLXBhcmtIM1gDaGyIAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AvuMhqUGwAIB0gIkYjIyZTljM2UtYTMwMi00ZjkxLTk5YzUtYmQ3Zjc4MGM0OGMy2AIF4AIB&sid=cf2571d32635b29b4bb07fb9c5163be6">Akash residency</a>
+          <a href="https://www.booking.com/hotel/in/harish-rameswaram.en-gb.html?aid=356980&label=gog235jc-1BCAUobEIjZ3VsZi1vZi1tYW5uYXItbWFyaW5lLW5hdGlvbmFsLXBhcmtIM1gDaGyIAQGYAQm4ARfIAQzYAQHoAQGIAgGoAgO4AvuMhqUGwAIB0gIkYjIyZTljM2UtYTMwMi00ZjkxLTk5YzUtYmQ3Zjc4MGM0OGMy2AIF4AIB&sid=cf2571d32635b29b4bb07fb9c5163be6">Hotel Harish</a>
+         </div> 
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

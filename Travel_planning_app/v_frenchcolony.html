@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+       h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 20px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>FRENCH COLONY</h1>
+    <img src="https://themeghalayan.com/wp-content/uploads/2022/05/french-colony-pondicherry.webp">
+    <img src="https://cdn.pixabay.com/photo/2015/08/27/09/06/french-909691_1280.jpg">
+    <img src="https://i.pinimg.com/736x/9e/74/c7/9e74c7439183c96b41ec018bcffb9492.jpg">
+    <img src="https://imgmedia.lbb.in/media/2019/01/5c505a38b2bf5c1c5f2e20b8_1548769848135.jpg">
+    <div class="info">
+    <h2>Address</h2>
+    <p>WRJM+2MF, Dumas St, White Town, Puducherry, 605001</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat: 11.930071571869632, lng:79.83432710551055  };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+        
+        <div class="hotels">
+          <a href="https://www.booking.com/hotel/in/la-villa-pondicherry.en-gb.html?aid=356980&label=gog235jc-1BCAcobEIVcG9uZGljaGVycnlfd2hpdGV0b3duSDNYA2hsiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuALAioalBsACAdICJGRmYjEzODc3LThiNWMtNDc0My04NTM3LWNiYjU2OTkxMmRiY9gCBeACAQ&sid=cf2571d32635b29b4bb07fb9c5163be6">La Villa</a>
+          <a href="https://www.booking.com/hotel/in/grand-d-39-europe.en-gb.html?aid=356980&label=gog235jc-1BCAcobEIVcG9uZGljaGVycnlfd2hpdGV0b3duSDNYA2hsiAEBmAEJuAEXyAEM2AEB6AEBiAIBqAIDuALAioalBsACAdICJGRmYjEzODc3LThiNWMtNDc0My04NTM3LWNiYjU2OTkxMmRiY9gCBeACAQ&sid=cf2571d32635b29b4bb07fb9c5163be6">Grand Hotel</a>
+          <a href="https://www.agoda.com/en-in/hotel-le-dupleix-pondicherry/hotel/pondicherry-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1891440&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2023-07-3&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=794bb29c-414e-4c6f-bed3-0b6f34f16322&isCityHaveAsq=false&tspTypes=9,9,16,16&los=1&searchrequestid=c83c3648-d6f3-47b5-be8f-00e5be91f7f4">Hotel Le Dupleix</a>
+          <a href="https://www.agoda.com/en-in/aura-hotel/hotel/pondicherry-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1891440&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2023-07-3&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=794bb29c-414e-4c6f-bed3-0b6f34f16322&isCityHaveAsq=false&tspTypes=5,16,16&los=1&searchrequestid=c83c3648-d6f3-47b5-be8f-00e5be91f7f4">Aura Hotel</a>
+         </div>
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

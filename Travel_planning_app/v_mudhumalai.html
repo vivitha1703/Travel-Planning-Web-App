@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mudhumalai</title>
+    <style>
+        h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 20px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>MUDHUMALAI</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Tiger_Drinking_Pond_Mudumalai_Mar21_DSC01310.jpg">
+    <img src="https://images.thrillophilia.com/image/upload/s--W3sUyDw6--/c_fill,g_center,h_210,q_auto,w_350/f_auto,fl_strip_profile/v1/attractions/images/000/002/865/original/tiger4.jpg.jpg">
+    <img src="https://www.ootyindia.com/pictures/city/gallery/10_1896.jpg">
+    <img src="https://www.travelescape.in/wp-content/uploads/2015/04/Mudumalai-Tiger-Reserve.jpg">
+    <div class="info">
+    <h2>Address</h2>
+    <p>NH 67, Gudalur NH 67, Gudalur, Devarshola, Tamil Nadu, 643223, India<br>0423 2444 098</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat:11.637534923349689, lng:  76.49415832768258  };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    <h2>Nearby hotels</h2>
+    <div class="hotels">
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201412171715559020&_uCurrency=INR&checkin=date_2&checkout=date_3&city=CTGUDA&cmp=SEM%7CD%7CDH%7CG%7CNeighbourhood%7CDH_POI_Exact_Locus%7CCTGUDA_POI66304_Mudumalai%20National%20Park%7C&country=IN&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp6vYedMScrUgnOcqouTim3_lEYrlprvxhyiBsJK_9Pc2pvDzJlzE1QaAmQGEALw_wcB&lat=11.54337&lng=76.51926&locusId=CTGUDA&locusType=city&mmPoiTag=POI%7CMudumalai%20National%20Park%7CPOI66304%7C&rank=4&roomStayQualifier=2e0e&mtkeys=defaultMtkey">Deep Jungle Home</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201705020551122720&_uCurrency=INR&checkin=date_2&checkout=date_3&city=CTGUDA&cmp=SEM%7CD%7CDH%7CG%7CNeighbourhood%7CDH_POI_Exact_Locus%7CCTGUDA_POI66304_Mudumalai%20National%20Park%7C&country=IN&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp6vYedMScrUgnOcqouTim3_lEYrlprvxhyiBsJK_9Pc2pvDzJlzE1QaAmQGEALw_wcB&lat=11.5324&lng=76.52822&locusId=CTGUDA&locusType=city&mmPoiTag=POI%7CMudumalai%20National%20Park%7CPOI66304%7C&rank=3&roomStayQualifier=2e0e&mtkeys=defaultMtkey">Tiger Tracks</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201806291717491387&_uCurrency=INR&checkin=date_2&checkout=date_3&city=CTGUDA&cmp=SEM%7CD%7CDH%7CG%7CNeighbourhood%7CDH_POI_Exact_Locus%7CCTGUDA_POI66304_Mudumalai%20National%20Park%7C&country=IN&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp6vYedMScrUgnOcqouTim3_lEYrlprvxhyiBsJK_9Pc2pvDzJlzE1QaAmQGEALw_wcB&lat=11.53276&lng=76.52377&locusId=CTGUDA&locusType=city&mmPoiTag=POI%7CMudumalai%20National%20Park%7CPOI66304%7C&rank=2&roomStayQualifier=2e0e&mtkeys=defaultMtkey">Wildlife Home</a>
+    
+     </div>
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

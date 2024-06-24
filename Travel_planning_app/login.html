@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<style>
+	  body {
+	font-family: Arial, sans-serif;
+    background-color:lightskyblue;
+	}
+
+	.container {
+	width: 500px;
+    margin: 0 auto;
+	padding-top: 50px;
+	}
+
+	form {
+	border: 1px solid #ccc;
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy7s1P-fyWFRvbeJOG8KgFOQ-F9aR_eP6-c23YCruipA&usqp=CAU&ec=48600112);
+	background-size: cover;
+    padding: 20px;
+	border-radius: 10px;
+    height: 500px;
+	}
+
+	h1 {
+	text-align: center;
+	}
+
+	label {
+	display: block;
+	margin-bottom: 10px;
+	}
+
+	input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 30px 0;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	}
+
+	button[type=submit] {
+	background-color:mediumblue;
+	color: white;
+	padding: 15px 20px;
+	margin: 60px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+    font-weight: bolder;
+	}
+
+	button[type=submit]:hover {
+	background-color:mediumblue;
+	}	
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form onsubmit="Verify(event)">
+			<h1>Login</h1>
+			<label for="username">Username</label>
+			<input type="text" id="username" placeholder="Enter Username" name="username" required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" placeholder="Enter Password" name="password" required>
+
+			<button type="submit">Submit</button>
+
+		</form>
+	</div>
+
+	<script>
+		function Verify(event){
+			event.preventDefault();
+    var userRef="nathiya";
+    var passRef="0000";
+
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    if(user == userRef && pass == passRef){
+        //alert("Login Successful");
+		console.log("success");
+		window.location.href = "home.html";
+		
+    }
+    else{
+        alert("Login Failed");
+    }
+}
+	</script>
+</body>
+</html>

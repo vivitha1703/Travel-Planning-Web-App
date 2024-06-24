@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blackthunder</title>
+    <style>
+       h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 20px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>QUEENS LAND</h1>
+    <img src="https://res.cloudinary.com/simplotel/image/upload/w_5000,h_3750/x_0,y_0,w_5000,h_2810,c_crop,q_80,fl_progressive/w_600,h_337,f_auto,c_fit/black-thunder---water-theme-park/Lucky_Ariel_vttsit">
+    <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_26,w_975,h_548,r_0,c_crop,q_80,fl_progressive/w_500,f_auto,c_fit/black-thunder---water-theme-park/Black_Thunder,_Water_Rides,_Black_Thunder_Theme_Park_,_Coimbatore">
+    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/08/d0/c5/black-thunder-theme-park.jpg?w=1200&h=-1&s=1">
+    <img src="https://res.cloudinary.com/simplotel/image/upload/x_0,y_119,w_1280,h_721,r_0,c_crop,q_80,fl_progressive/w_500,f_auto,c_fit/black-thunder---water-theme-park/Black_Thunder_,_Black_Thunder_Theme_Park_,_Coimbatore">
+    <div class="info">
+    <h2>Address</h2>
+    <p>Nagapattinam - Coimbatore - Gundlupet Hwy, Mettupalayam, Tamil Nadu 641305</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat: 11.326507388215973, lng:76.91254296212102  };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+    <div class="hotels">
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201801131447523117&_uCurrency=INR&checkin=07272023&checkout=07282023&city=CTMAA&cmp=SEO&country=IN&lat=13.03741&lng=80.04394&locusId=CTMAA&locusType=city&mmPoiTag=POI%7CQueensland%20Amusement%20Park%7CPOIQUEENSC1B245%7C13.03%7C80.0276&modifyDates=true&pwa_ssr=true&rank=1&roomStayQualifier=2e0e&searchText=Queensland%20Amusement%20Park%2C%20Chennai&seoReq=1688298657496&mtkeys=defaultMtkey">CenturyPark</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201503271652521010&_uCurrency=INR&checkin=07272023&checkout=07282023&city=CTMAA&cmp=SEO&country=IN&lat=13.02951&lng=80.02966&locusId=CTMAA&locusType=city&mmPoiTag=POI%7CQueensland%20Amusement%20Park%7CPOIQUEENSC1B245%7C13.03%7C80.0276&modifyDates=true&pwa_ssr=true&rank=2&roomStayQualifier=2e0e&searchText=Queensland%20Amusement%20Park%2C%20Chennai&seoReq=1688298657496&mtkeys=defaultMtkey">Pleasent days</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200701151135311487&_uCurrency=INR&checkin=07272023&checkout=07282023&city=CTMAA&cmp=SEO&country=IN&lat=13.03774&lng=80.1599&locusId=CTMAA&locusType=city&mmPoiTag=POI%7CQueensland%20Amusement%20Park%7CPOIQUEENSC1B245%7C13.03%7C80.0276&modifyDates=true&pwa_ssr=true&rank=3&roomStayQualifier=2e0e&searchText=Queensland%20Amusement%20Park%2C%20Chennai&seoReq=1688298657496&mtkeys=defaultMtkey">Grand residence</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201602221226508320&_uCurrency=INR&checkin=07272023&checkout=07282023&city=CTMAA&cmp=SEO&country=IN&lat=13.036&lng=80.146&locusId=CTMAA&locusType=city&mmPoiTag=POI%7CQueensland%20Amusement%20Park%7CPOIQUEENSC1B245%7C13.03%7C80.0276&modifyDates=true&rank=4&roomStayQualifier=2e0e&searchText=Queensland%20Amusement%20Park%2C%20Chennai&seoReq=1688298657496&mtkeys=defaultMtkey">V7 Hotel</a>
+     </div>
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

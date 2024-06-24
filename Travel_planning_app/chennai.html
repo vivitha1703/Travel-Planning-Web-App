@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marundeeswarar Templ</title>
+    <style>
+      
+       h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 10px;
+        
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>ARULMIGU MARUNDHEESWARAR TEMPLE</h1>
+    <img src="https://lh3.googleusercontent.com/p/AF1QipOFu5_Ihh1SwFLzRIj4blQbon79C443pq8cdWrv=s1360-w1360-h1020">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipMoJlSy_rDbNTqzo_nejQy88Ygyyx6Bs80Y1-cM=s1360-w1360-h1020">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipMFZoMUTPeFAgRJF3Ci6jsRorUbrZGKlJwdlzJ5=s1360-w1360-h1020">
+    <img src="https://lh3.googleusercontent.com/p/AF1QipOxi--FyBrg9Fw4MnPg2vs_wDLG8QNXNi2r5qpM=s1360-w1360-h1020">
+    <div class="info">
+    <h2>Address</h2>
+    <p>8, W Tank St, Ambedkar Nagar, Lalitha Nagar, Thiruvanmiyur, Chennai, Tamil Nadu 600041</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat: 12.984844, lng:80.26046};
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+    <div class="hotels">
+        <a href="https://www.lemontreehotels.com/keys-select-hotel/chennai/hotel-katti-ma-chennai.aspx">Hotel Katti Ma</a>
+        <a href="https://www.agoda.com/en-in/search?selectedproperty=757059&city=17269&hid=757059&site_id=1891440&tag=b6ddb71c-db39-423b-8e2f-2995f9fc8093&nhakw=1&device=c&network=g&adid=579623883504&rand=11228701580218652432&expid=&adpos=&aud=kwd-299715399720&gclid=Cj0KCQjwwISlBhD6ARIsAESAmp4zectHc2khjNdQcPzmw5Wke2Uux-jJUlG9tJmH-VbH2bav1CZp29gaAsbzEALw_wcB&checkIn=2023-07-03&checkOut=2023-07-04&adults=1&rooms=1&pslc=1">Season 4 Residences</a>
+        <a href="https://www.makemytrip.com/hotels/the_bentley_sea_side_boutique_hotel_previously_the_eldoris-details-chennai.html">Bentley Seaside Boutique</a>  
+        <a href="https://www.turyaachennai.com/special-offers.html">Turyaa </a>
+    </div>
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

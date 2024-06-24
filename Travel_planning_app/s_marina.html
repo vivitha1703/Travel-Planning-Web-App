@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina beach</title>
+    <style>
+       h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 20px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>MARINA BEACH</h1>
+    <img src="https://media.istockphoto.com/id/1253972619/photo/vast-marina-beach-in-india.jpg?s=612x612&w=0&k=20&c=JWjD6FmiUk_CxLuL5dM6an9eNRTxUBDoMiWSozFqFeI=">
+    <img src="https://img.etimg.com/thumb/msid-79741131,width-640,resizemode-4,imgsize-162805/chennai-marina-beach-reopens.jpg">
+    <img src="https://chennaitourism.travel/images/places-to-visit/headers/marina-beach-chennai-tourism-entry-fee-timings-holidays-reviews-header.jpg">
+    <img src="https://www.shutterstock.com/image-photo/marina-beach-chennai-city-tamil-260nw-1120849187.jpg">
+    <div class="info">  
+    <h2>Address</h2>
+    <p>Chennai, Tamil Nadu 623516</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat: 13.0500, lng:  80.2824 };
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+    <div class="hotels">
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202201181604126036&_uCurrency=INR&checkin=07272023&checkout=07282023&city=CTMAA&cmp=SEO&country=IN&lat=13.04346&lng=80.27115&locusId=CTMAA&locusType=city&mmAreaTag=Near%20Marina%20Beach%7CARNEARMARI&modifyDates=true&pwa_ssr=true&rank=1&roomStayQualifier=2e0e&searchText=Near%20Marina%20Beach%2C%20Chennai&seoReq=1688263265675&mtkeys=defaultMtkey">Hotel President</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200704231119145088&_uCurrency=INR&checkin=07272023&checkout=07282023&city=CTMAA&cmp=SEO&country=IN&lat=13.04427&lng=80.25933&locusId=CTMAA&locusType=city&mmAreaTag=Near%20Marina%20Beach%7CARNEARMARI&modifyDates=true&pwa_ssr=true&rank=2&roomStayQualifier=2e0e&searchText=Near%20Marina%20Beach%2C%20Chennai&seoReq=1688263265675&mtkeys=defaultMtkey">Raj Park</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200806231705198865&_uCurrency=INR&checkin=07272023&checkout=07282023&city=CTMAA&cmp=SEO&country=IN&lat=13.04654&lng=80.26158&locusId=CTMAA&locusType=city&mmAreaTag=Near%20Marina%20Beach%7CARNEARMARI&modifyDates=true&rank=3&roomStayQualifier=2e0e&searchText=Near%20Marina%20Beach%2C%20Chennai&seoReq=1688263265675&mtkeys=defaultMtkey">Hotel Savera</a>
+      <a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=200901081320124905&_uCurrency=INR&checkin=07272023&checkout=07282023&city=CTMAA&cmp=SEO&country=IN&lat=13.0614&lng=80.26389&locusId=CTMAA&locusType=city&mmAreaTag=Near%20Marina%20Beach%7CARNEARMARI&modifyDates=true&rank=4&roomStayQualifier=2e0e&searchText=Near%20Marina%20Beach%2C%20Chennai&seoReq=1688263265675&viewType=PREMIUM&mtkeys=defaultMtkey">Taj club house</a>
+     </div> 
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>

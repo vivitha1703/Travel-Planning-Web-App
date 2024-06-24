@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Review submission form -->
+<form id="reviewForm">
+  <label for="placeName">Place Name:</label>
+  <input type="text" id="placeName" required>
+  
+  <label for="rating">Rating:</label>
+  <select id="rating" required>
+    <option value="5">5 stars</option>
+    <option value="4">4 stars</option>
+    <option value="3">3 stars</option>
+    <option value="2">2 stars</option>
+    <option value="1">1 star</option>
+  </select>
+  
+  <label for="review">Review:</label>
+  <textarea id="review" required></textarea>
+  
+  <button type="submit">Submit Review</button>
+</form>
+
+<!-- Review display section -->
+<div id="reviewDisplay"></div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baywatch</title>
+    <style>
+       h1{
+            height: 70px;
+            background-image: url(https://medicainstitute.com/wp-content/uploads/2017/10/blue-gradient-background-6517.jpeg);
+            text-align: center;
+            padding-top: 40px;
+            color: white;
+        }
+        img{
+            margin-left: 1000px;
+            height:300px;
+            width:330px;
+        }
+        .info{
+          margin-top: -1270px;
+          width: 998px;
+        }
+        #map {
+        height: 400px;
+        width: 100%;
+      }
+        h2{
+        height: 50px;
+        background-color:bisque;
+        color: black;
+        font-size: 40px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+        p{
+            font-size: 20px;
+        }
+        h6{
+            text-align: 00px 30px;
+        }
+        .hotels a{
+          
+          border: 1px solid #000;
+          text-align: center;
+          font-size: 30px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh_AJhqDz1GrN2InsNS3Or2sP5lxVAOfsVZ4LOi2hD&s);
+          background-size: cover;
+          font-family: 'Times New Roman', Times, serif;
+          padding: 20px;
+          margin-top: 0px;
+          text-decoration: none;
+          border-radius: 10px;
+          color:black;
+        }
+        .hotels a:hover{
+          background-color: grey;
+          font-size: 35px;
+          transition: 1s;          
+        }
+    </style>
+</head>
+<body>
+    <h1>BAYWATCH</h1>
+    <img src="https://kanyakumaritourism.in/images/places-to-visit/headers/baywatch-park-kanyakumari-tourism-entry-fee-timings-holidays-reviews-header.jpg">
+    <img src="https://content.jdmagicbox.com/comp/kanyakumari/t2/9999p4652.4652.110208112303.b8t2/catalogue/baywatch-water-theme-amusement-park-kovalam-kanyakumari-amusement-parks-2hdlban.jpg">
+    <img src="https://kanyakumaritourism.in/images//tourist-places/baywatch-park-kanyakumari/baywatch-park-kanyakumari-tourism-location-address.jpg">
+    <div class="info">
+    <img src="https://c8.alamy.com/comp/BY7X3F/aerial-view-of-different-types-of-rides-in-bay-watch-water-theme-parkkanyakumaritamilnaduindia-BY7X3F.jpg">
+    <h2>Address</h2>
+    <p>Kovalam Rd, Kanyakumari, Tamil Nadu 629702</p>
+    <h2>Location</h2>
+    <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATxxyieA64y0RJ3j4dm6mAyf53q3v2DJY"></script>
+
+    <script>
+      function initMap() {
+        var myLatLng = { lat:8.082353003247954, lng:  77.53365139830994};
+        var map = new google.maps.Map(document.getElementById("map"), {
+          center: myLatLng,
+          zoom: 12 
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: "My Location"
+        });
+      }
+      window.onload = initMap;
+    </script>
+    
+    <h2>Nearby hotels</h2>
+    <div class="hotels">
+      <a href="https://www.tripadvisor.in/Hotel_Review-g608476-d1453893-Reviews-Sparsa_Resort-Kanyakumari_Kanyakumari_District_Tamil_Nadu.html">Sparsa Resort</a>
+      <a href="https://www.tripadvisor.in/Hotel_Review-g608476-d9570080-Reviews-Hotel_Temple_Citi-Kanyakumari_Kanyakumari_District_Tamil_Nadu.html">Temple Citi</a>
+      <a href="https://www.tripadvisor.in/Hotel_Review-g608476-d1192818-Reviews-New_Cape_Hotel-Kanyakumari_Kanyakumari_District_Tamil_Nadu.html">New Cape</a>
+      <a href="https://www.tripadvisor.in/Hotel_Review-g608476-d1907505-Reviews-Tri_Sea_Hotel_P_Ltd-Kanyakumari_Kanyakumari_District_Tamil_Nadu.html">Tri Sea Hotel</a>
+     </div>  
+    <h2>Travels</h2> 
+        <h3>Sharma tourist operators</h3>
+        <p1>Contact information:06384475262</p1>
+        <h3>Cassio Go Green Tours And Travels</h3>
+        <p1>Contact information:06384010585</p1>
+    </div>
+</body>
+</html>
